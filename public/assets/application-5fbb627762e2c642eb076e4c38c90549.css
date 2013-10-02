@@ -1,0 +1,168 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: "ff-tisa-web-pro", Georgia, Cambria, "Times New Roman", Times, serif;
+  color: #333332; }
+
+.spacer {
+  width: 100%;
+  height: 75px;
+  display: block; }
+
+.header {
+  height: 300px;
+  width: 100%;
+  background: url(http://s3.amazonaws.com/images.coop/cover.png) no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: "proxima-nova", sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  padding-top: 200px;
+  letter-spacing: 2px; }
+  .header h1 {
+    font-size: 60px; }
+  .header .sub-heading {
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 700px; }
+    .header .sub-heading h2 {
+      float: left;
+      width: 300px;
+      font-size: 34px; }
+    .header .sub-heading .line {
+      float: left;
+      height: 30px;
+      border-bottom: 4px #fff solid;
+      width: 180px;
+      margin-top: -10px; }
+
+h2 {
+  font-size: 52px;
+  line-height: 1.25;
+  margin-bottom: 60px;
+  text-align: center;
+  width: 100%; }
+
+h3 {
+  font-size: 36px;
+  line-height: 1.25;
+  margin-bottom: 30px;
+  text-align: left;
+  margin-left: 150px;
+  margin-top: 70px; }
+
+h4 {
+  font-size: 23px;
+  line-height: 1.25;
+  margin-bottom: 30px;
+  text-align: center;
+  margin-top: 30px; }
+
+p {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 1.50;
+  text-indent: 40px;
+  display: block;
+  -webkit-margin-before: 1.5em;
+  -webkit-margin-after: 1.5em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-font-smoothing: antialiased;
+  width: 700px;
+  margin: 0 auto;
+  margin-bottom: 30px; }
+
+.text {
+  width: 100%;
+  float: left;
+  display: block;
+  height: auto; }
+
+.wrapper {
+  width: 1000px;
+  height: auto;
+  margin: 0 auto; }
+
+section {
+  margin: 45px 0;
+  display: block;
+  width: 100%;
+  float: left; }
+
+.reset {
+  height: 1px;
+  width: 100%;
+  float: left; }
+
+.full-photo {
+  width: 100%;
+  float: left;
+  display: block;
+  padding: 30px 0 30px 0; }
+  .full-photo .img {
+    height: 500px;
+    background-color: #000; }
+  .full-photo .text {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px; }
+
+.half-photo-left {
+  width: 47%;
+  height: auto;
+  padding: 30px 0 30px 0;
+  padding-right: 3%;
+  float: left; }
+  .half-photo-left .img {
+    height: 340px;
+    background-color: #000; }
+  .half-photo-left .text {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    width: 400px;
+    padding-right: 3%; }
+
+.half-photo-right {
+  width: 47%;
+  height: auto;
+  padding: 30px 0 30px 0;
+  padding-left: 3%;
+  float: left; }
+  .half-photo-right .img {
+    height: 340px;
+    background-color: #000; }
+  .half-photo-right .text {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+    width: 400px;
+    padding-left: 3%; }
+
+footer {
+  background-color: #d84956;
+  height: 300px;
+  width: 100%;
+  float: left; }

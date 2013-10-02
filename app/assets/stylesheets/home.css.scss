@@ -1,0 +1,672 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+	font-family: "proxima-nova", Georgia, Cambria, "Times New Roman", Times, serif;
+  color: #333332;
+  background-color: #f7f5f2;
+  color: #2c3e50;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  margin-top: 113px;
+  width: 317px;
+  height: 20px;
+  background-color: #25a6e9;
+  -moz-border-radius: 24px;
+  -webkit-border-radius: 24px;
+  border-radius: 24px;
+  text-decoration: none !important;
+  padding: 16px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  display: block;
+  text-shadow: -1px -1px 0px rgba(0,0,0,0.1);
+  cursor: pointer;
+  float: right;
+  padding: 14px 50px;
+  color: #fff;
+}
+
+.header {
+   width: 100%;
+   height: 400px;
+
+  h1 {
+    float: left;
+    font-size: 5.5em;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+
+  p {
+    float: left;
+    width: 100%;
+    font-size: 1.8em;
+    color: #52616f;
+    line-height: 1.5em;
+  }
+
+  .line {
+    border-top: 1px #bbc2ca solid;
+    height: 10px;
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+.small-wrapper {
+	width: 770px;
+	height: auto;
+	margin: 0 auto;
+}
+
+.large-wrapper {
+  width: 900px;
+  height: auto;
+  margin: 0 auto;
+}
+
+h2 {
+  margin-top: 70px;
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.footer {
+  height: 340px;
+  width: 100%;
+  background: #2c3e50 image-url("mountains.png") no-repeat bottom center; 
+  padding-top: 233px;
+  margin-top: 160px;
+
+  p {
+    color: #a2acb8;;
+    font-size: 16px;
+    margin-top: 2px;
+     font-weight: 400;
+  }
+
+  .by {
+    width: 432px;
+    height: 20px;
+    margin: 285px auto 0 auto;
+  }
+
+  .made-by {
+    float: left;
+  }
+
+  .made-in {
+    float: left;
+    margin-left: 10px;
+  }
+
+  .grey-button {
+    float: left;
+    margin-top: -4px;
+    margin-left: 10px;
+    width: 150px;
+    height: 30px;
+    background-color: #747f8a;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    
+
+    .icon {
+      float: left;
+      height: 30px;
+      width: 30px;
+      background: image-url("twitter-icon.png") no-repeat center center;
+      padding-left: 12px;
+    }
+
+    .text-on-button {
+      font-size: 14px;
+      font-weight: bold;
+      float: left;
+      padding-top: 6px;
+      padding-left: 1px;
+
+      a {
+        color: #242c35;
+      }
+
+    }
+  }
+}
+
+.italian-flag {
+  float: left;
+  margin-left: 10px;
+
+  .part {
+    width: 11px;
+    height: 21px;
+    float: left;
+  }
+  .green {
+    background-color: #05bb1f;
+  }
+
+  .white {
+    background-color: #fff;
+  }
+
+  .red {
+    background-color: #da0707;
+  }
+}
+
+@mixin star($size, $mtop, $mleft, $color) {
+
+  #star {
+   float: left;
+   margin: $mtop $mleft;
+   position: relative;
+   display: block;
+   color: $color;
+   width: 0px;
+   height: 0px;
+   border-right:  (100px * $size) solid transparent;
+   border-bottom: (70px * $size)  solid $color;
+   border-left:   (100px * $size) solid transparent;
+   -moz-transform:    rotate(35deg);
+   -webkit-transform: rotate(35deg);
+   -ms-transform:     rotate(35deg);
+   -o-transform:      rotate(35deg);
+  }
+  #star:before {
+   border-bottom: (80px * $size) solid $color;
+   border-left: (30px * $size) solid transparent;
+   border-right: (30px * $size) solid transparent;
+   position: absolute;
+   height: 0;
+   width: 0;
+   top: -45px * $size;
+   left: -65px * $size;
+   display: block;
+   content: '';
+   -webkit-transform: rotate(-35deg);
+   -moz-transform:    rotate(-35deg);
+   -ms-transform:     rotate(-35deg);
+   -o-transform:      rotate(-35deg);
+  }
+
+  #star:after {
+   position: absolute;
+   display: block;
+   color: $color;
+   top: 3px * $size;
+   left: -105px * $size;
+   width: 0px;
+   height: 0px;
+   border-right: (100px * $size) solid transparent;
+   border-bottom: (70px * $size) solid $color;
+   border-left: (100px * $size) solid transparent;
+   -webkit-transform: rotate(-70deg);
+   -moz-transform:    rotate(-70deg);
+   -ms-transform:     rotate(-70deg);
+   -o-transform:      rotate(-70deg);
+   content: '';
+  }
+}
+
+
+
+
+
+
+// CSS FLAGS ///////////////////
+
+
+
+
+// United States Flag 
+.united-states {
+
+  $constant: 400px;
+  $height: 1;
+  $width: 1.9;
+
+  height: $height * $constant;
+  width: $width * $constant;
+  border: 1px solid #ccc;
+  border-bottom: none;
+  position: relative;
+
+  .row {
+    width: 100%;
+    height: 7.692307%;
+    float: left;
+  }
+
+  .red {
+    background-color: #B22234;
+  }
+
+  .white {
+    background-color: #FFFFFF;
+  }
+
+  .square {
+    background-color: #3C3B6E;
+    height: 53.85%;
+    width: .76 * $constant;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    z-index: 100;
+    //margin-top: 5px;
+  }
+
+  .star-space {
+    width: 100%;
+    height: 5px;
+    float: left;
+  }
+
+  .star-row {
+    width: 100%;
+    height: 22px;
+    float: left;
+  }
+
+  .star-row-five {
+    width: 100%;
+    height: 22px;
+    float: left;
+    padding-left: 27px;
+  }
+
+  @include star(.1, 11px, 15px, white);
+
+  //Color and Dimensions
+  //http://en.wikipedia.org/wiki/Us_flag
+  //http://www.usflag.org/flagspecs.html
+}
+
+
+//Italian Flag
+
+.italy {
+  $constant: 250px;
+  $height: 2;
+  $width: 3;
+
+  height: $height * $constant;
+  width: $width * $constant;
+  border: 1px solid #ccc;
+
+  .column {
+    width: 33.333%;
+    height: 100%;
+    float: left;
+  }
+
+  .green {
+    background-color: #009246;
+  }
+  .white {
+    background-color: #F1F2F1;
+  }
+  .red {
+    background-color: #CE2B37;
+  }
+  
+  //Color and Dimensions
+  //http://en.wikipedia.org/wiki/Italian_flag
+}
+
+//Monaco Flag 
+
+.monaco {
+  $constant: 125px;
+  $height: 4;
+  $width: 5;
+
+  height: $height * $constant;
+  width: $width * $constant;
+  border: 1px solid #ccc;
+
+  .row {
+    height: 50%;
+    width: 100%;
+    float: left;
+  }
+
+ .red {
+    background-color: #DE0000;
+  }
+
+  .white {
+    background-color: #FFF;
+  }
+
+  //Color and Dimensions
+  //http://en.wikipedia.org/wiki/Flag_of_Monaco
+
+  //could not find exact hex colors
+}
+
+
+.indonesia {
+  $constant: 250px;
+  $height: 2;
+  $width: 3;
+
+  height: $height * $constant;
+  width: $width * $constant;
+  border: 1px solid #ccc;
+
+  .row {
+    height: 50%;
+    width: 100%;
+    float: left;
+  }
+
+  .red {
+    background-color: #DE0000;
+  }
+
+  .white {
+    background-color: #FFF;
+  }
+  
+  //Color and Dimensions
+  //http://en.wikipedia.org/wiki/Flag_of_Indonesia
+
+  //could not find exact hex colors
+}
+
+
+.france{
+  $constant: 250px;
+  $height: 2;
+  $width: 3;
+
+  height: $height * $constant;
+  width: $width * $constant;
+  border: 1px solid #ccc;
+
+  .column {
+    width: 33.333%;
+    height: 100%;
+    float: left;
+  }
+
+  .blue {
+    background-color: #0055A4;
+  }
+  .white {
+    background-color: #FFFFFF;
+  }
+  .red {
+    background-color: #EF4135;
+  }
+  
+  //Color and Dimensions
+  //http://en.wikipedia.org/wiki/Flag_of_France
+}
+
+.germany {
+  $constant: 150px;
+  $height: 3;
+  $width: 5;
+
+  height: $height * $constant;
+  width: $width * $constant;
+  border: 1px solid #ccc;
+
+  .row {
+    height: 33.333%;
+    width: 100%;
+    float: left;
+  }
+
+  .black {
+    background-color: #000000;
+  }
+  .red {
+    background-color: #FF0000;
+  }
+  .yellow {
+    background-color: #FFCC00;
+  }
+  
+  //Color and Dimensions
+  //http://en.wikipedia.org/wiki/Flag_of_Germany
+
+}
+
+
+.curacao {
+  $constant: 250px;
+  $height: 2;
+  $width: 3;
+
+  height: $height * $constant;
+  width: $width * $constant;
+  border: 1px solid #ccc;
+  background-color: #002B7F;
+  position: relative;
+
+  .row {
+    margin-top: 320px;
+    height: 11%;
+    width: 100%;
+    float: left;
+    background-color: #F9E814; //yellow
+  }
+
+
+  .small {
+    @include star(.4, 11px, 15px, white);
+    position: absolute;
+    top: 45px;
+    left: 30px;
+  }
+
+   .large {
+    @include star(.6, 11px, 15px, white);
+    position: absolute;
+    top: 135px;
+    left: 110px;
+  }
+  
+  //Color and Dimensions
+  //http://fotw.net/flags/cw.html
+
+  //Positions of stars and stripe are an estimation not exact
+}
+
+.taiwan {
+  $constant: 250px;
+  $height: 2;
+  $width: 3;
+
+  height: $height * $constant;
+  width: $width * $constant;
+  border: 1px solid #ccc;
+  background-color: #fe0000;
+  position: relative;
+
+  .square {
+    background-color: #000095;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+  }
+
+  .symbol {
+    height: 75%;
+    margin: 8% 25%;
+    width: 50%;
+
+    .circle {
+      background-color: #ffffff;
+      width: 56%;
+      height: 56%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      margin: 22% 22%;
+      float: left;
+    }
+
+    @mixin triangle($degrees, $top, $left) {
+      position: absolute;
+      top: $top;
+      left: $left;
+      width: 0;
+      height: 0;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      border-bottom: 42px solid #fff;
+      -moz-transform:    rotate($degrees);
+      -webkit-transform: rotate($degrees);
+      -ms-transform:     rotate($degrees);
+      -o-transform:      rotate($degrees);
+    }
+
+
+    .triangle-1 {
+      @include triangle(0deg, 22px, 176px);
+    }
+
+    .triangle-2 {
+      @include triangle(30deg, 32px, 217px);
+    }
+
+    .triangle-3 {
+      @include triangle(60deg, 63px, 246px);
+    }
+
+    .triangle-4 {
+      @include triangle(90deg, 104px, 256px);
+    }
+
+    .triangle-5 {
+      @include triangle(120deg, 143px, 245px);
+    }
+
+    .triangle-6 {
+      @include triangle(150deg, 173px, 217px);
+    }
+
+    .triangle-7 {
+      @include triangle(180deg, 183px, 177px);
+    }
+
+    .triangle-8 {
+      @include triangle(210deg, 173px, 136px);
+    }
+
+    .triangle-9 {
+      @include triangle(240deg, 143px, 105px);
+    }
+
+    .triangle-10 {
+      @include triangle(270deg, 104px, 95px);
+    }
+
+    .triangle-11 {
+      @include triangle(300deg, 63px, 105px);
+    }
+
+    .triangle-12 {
+      @include triangle(330deg, 32px, 135px);
+    }
+
+
+  }
+
+  //Color and Dimensions
+  //http://fotw.net/flags/tw.html
+}
+
+
+.qatar {
+  $constant: 27px;
+  $height: 11;
+  $width: 28;
+
+  height: $height * $constant;
+  width: $width * $constant;
+  border: 1px solid #ccc;
+  background-color: #8d1b3d;
+  overflow: hidden;
+
+  .white {
+    height: 100%;
+    width: 33.333%;
+    float: left;
+    background-color: #FFF;
+  }
+
+  @mixin triangle($top, $left) {
+      float: left;
+      width: 0;
+      height: 0;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      border-bottom: 42px solid #fff;
+      -moz-transform:    rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      -ms-transform:     rotate(90deg);
+      -o-transform:      rotate(90deg);
+  }
+
+  .triangle-container {
+    height: 11.11%;
+    width: 66.66%;
+    display: block;
+    float: left;
+
+    .triangle {
+      float: left;
+      width: 0;
+      height: 0;
+      border-left: 22px solid transparent;
+      border-right: 22px solid transparent;
+      border-bottom: 82px solid #fff;
+      -moz-transform:    rotate(90deg);
+      -webkit-transform: rotate(90deg);
+      -ms-transform:     rotate(90deg);
+      -o-transform:      rotate(90deg);
+    }
+  }
+
+  .first {
+    margin-top: -25px;
+  }
+
+
+  
+  //Color and Dimensions
+  //http://en.wikipedia.org/wiki/Flag_of_Qatar
+
+}
+
+
+
+
+
+
+
