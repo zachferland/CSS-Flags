@@ -33,12 +33,14 @@ a {
   cursor: pointer;
   float: right;
   padding: 14px 50px;
-  color: #fff;
+  a {
+    color: #fff;
+  }
 }
 
 .header {
    width: 100%;
-   height: 400px;
+   height: 430px;
 
   h1 {
     float: left;
@@ -53,6 +55,9 @@ a {
     font-size: 1.8em;
     color: #52616f;
     line-height: 1.5em;
+    a {
+      color: #25a6e9;
+    }
   }
 
   .line {
@@ -77,10 +82,29 @@ a {
   margin: 0 auto;
 }
 
-h2 {
+.text-box {
+  width: 100%;
   margin-top: 70px;
   margin-bottom: 30px;
-  font-size: 2em;
+  height: 45px;
+
+
+  h2 {
+    font-size: 2.2em;
+    float: left;
+  } 
+
+  h4 {
+    float: left;
+    font-size: 0.9em;
+    margin-top: 18px;
+    margin-left: 15px;
+  }
+
+  a {
+    color: #25a6e9;
+  }
+
 }
 
 .footer {
