@@ -1,0 +1,29 @@
+//Italian Flag
+.italy {
+  $constant: 250px;
+  $height: 2;
+  $width: 3;
+
+  height: $height * $constant;
+  width: $width * $constant;
+  border: 1px solid #ccc;
+
+  .column {
+    width: 33.333%;
+    height: 100%;
+    float: left;
+  }
+
+  .green {
+    background-color: #009246;
+  }
+  .white {
+    background-color: #F1F2F1;
+  }
+  .red {
+    background-color: #CE2B37;
+  }
+  
+  //Color and Dimensions
+  //http://en.wikipedia.org/wiki/Italian_flag
+}

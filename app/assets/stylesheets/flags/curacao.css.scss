@@ -1,0 +1,94 @@
+@mixin star($size, $mtop, $mleft, $color) {
+
+  #star {
+   float: left;
+   margin: $mtop $mleft;
+   position: relative;
+   display: block;
+   color: $color;
+   width: 0px;
+   height: 0px;
+   border-right:  (100px * $size) solid transparent;
+   border-bottom: (70px * $size)  solid $color;
+   border-left:   (100px * $size) solid transparent;
+   -moz-transform:    rotate(35deg);
+   -webkit-transform: rotate(35deg);
+   -ms-transform:     rotate(35deg);
+   -o-transform:      rotate(35deg);
+  }
+  #star:before {
+   border-bottom: (80px * $size) solid $color;
+   border-left: (30px * $size) solid transparent;
+   border-right: (30px * $size) solid transparent;
+   position: absolute;
+   height: 0;
+   width: 0;
+   top: -45px * $size;
+   left: -65px * $size;
+   display: block;
+   content: '';
+   -webkit-transform: rotate(-35deg);
+   -moz-transform:    rotate(-35deg);
+   -ms-transform:     rotate(-35deg);
+   -o-transform:      rotate(-35deg);
+  }
+
+  #star:after {
+   position: absolute;
+   display: block;
+   color: $color;
+   top: 3px * $size;
+   left: -105px * $size;
+   width: 0px;
+   height: 0px;
+   border-right: (100px * $size) solid transparent;
+   border-bottom: (70px * $size) solid $color;
+   border-left: (100px * $size) solid transparent;
+   -webkit-transform: rotate(-70deg);
+   -moz-transform:    rotate(-70deg);
+   -ms-transform:     rotate(-70deg);
+   -o-transform:      rotate(-70deg);
+   content: '';
+  }
+}
+
+
+.curacao {
+  $constant: 250px;
+  $height: 2;
+  $width: 3;
+
+  height: $height * $constant;
+  width: $width * $constant;
+  border: 1px solid #ccc;
+  background-color: #002B7F;
+  position: relative;
+
+  .row {
+    margin-top: 320px;
+    height: 11%;
+    width: 100%;
+    float: left;
+    background-color: #F9E814; //yellow
+  }
+
+
+  .small {
+    @include star(.4, 11px, 15px, white);
+    position: absolute;
+    top: 45px;
+    left: 30px;
+  }
+
+   .large {
+    @include star(.6, 11px, 15px, white);
+    position: absolute;
+    top: 135px;
+    left: 110px;
+  }
+  
+  //Color and Dimensions
+  //http://fotw.net/flags/cw.html
+
+  //Positions of stars and stripe are an estimation not exact
+}

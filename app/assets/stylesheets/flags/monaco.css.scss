@@ -1,0 +1,29 @@
+//Monaco Flag 
+.monaco {
+  $constant: 125px;
+  $height: 4;
+  $width: 5;
+
+  height: $height * $constant;
+  width: $width * $constant;
+  border: 1px solid #ccc;
+
+  .row {
+    height: 50%;
+    width: 100%;
+    float: left;
+  }
+
+ .red {
+    background-color: #DE0000;
+  }
+
+  .white {
+    background-color: #FFF;
+  }
+
+  //Color and Dimensions
+  //http://en.wikipedia.org/wiki/Flag_of_Monaco
+
+  //could not find exact hex colors
+}

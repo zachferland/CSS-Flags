@@ -1,0 +1,106 @@
+.taiwan {
+  $constant: 250px;
+  $height: 2;
+  $width: 3;
+
+  height: $height * $constant;
+  width: $width * $constant;
+  border: 1px solid #ccc;
+  background-color: #fe0000;
+  position: relative;
+
+  .square {
+    background-color: #000095;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+  }
+
+  .symbol {
+    height: 75%;
+    margin: 8% 25%;
+    width: 50%;
+
+    .circle {
+      background-color: #ffffff;
+      width: 56%;
+      height: 56%;
+      -moz-border-radius: 50%;
+      -webkit-border-radius: 50%;
+      border-radius: 50%;
+      margin: 22% 22%;
+      float: left;
+    }
+
+    @mixin triangle($degrees, $top, $left) {
+      position: absolute;
+      top: $top;
+      left: $left;
+      width: 0;
+      height: 0;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      border-bottom: 42px solid #fff;
+      -moz-transform:    rotate($degrees);
+      -webkit-transform: rotate($degrees);
+      -ms-transform:     rotate($degrees);
+      -o-transform:      rotate($degrees);
+    }
+
+
+    .triangle-1 {
+      @include triangle(0deg, 22px, 176px);
+    }
+
+    .triangle-2 {
+      @include triangle(30deg, 32px, 217px);
+    }
+
+    .triangle-3 {
+      @include triangle(60deg, 63px, 246px);
+    }
+
+    .triangle-4 {
+      @include triangle(90deg, 104px, 256px);
+    }
+
+    .triangle-5 {
+      @include triangle(120deg, 143px, 245px);
+    }
+
+    .triangle-6 {
+      @include triangle(150deg, 173px, 217px);
+    }
+
+    .triangle-7 {
+      @include triangle(180deg, 183px, 177px);
+    }
+
+    .triangle-8 {
+      @include triangle(210deg, 173px, 136px);
+    }
+
+    .triangle-9 {
+      @include triangle(240deg, 143px, 105px);
+    }
+
+    .triangle-10 {
+      @include triangle(270deg, 104px, 95px);
+    }
+
+    .triangle-11 {
+      @include triangle(300deg, 63px, 105px);
+    }
+
+    .triangle-12 {
+      @include triangle(330deg, 32px, 135px);
+    }
+
+
+  }
+
+  //Color and Dimensions
+  //http://fotw.net/flags/tw.html
+}

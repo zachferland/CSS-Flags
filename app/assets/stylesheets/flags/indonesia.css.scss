@@ -1,0 +1,28 @@
+.indonesia {
+  $constant: 250px;
+  $height: 2;
+  $width: 3;
+
+  height: $height * $constant;
+  width: $width * $constant;
+  border: 1px solid #ccc;
+
+  .row {
+    height: 50%;
+    width: 100%;
+    float: left;
+  }
+
+  .red {
+    background-color: #DE0000;
+  }
+
+  .white {
+    background-color: #FFF;
+  }
+  
+  //Color and Dimensions
+  //http://en.wikipedia.org/wiki/Flag_of_Indonesia
+
+  //could not find exact hex colors
+}
