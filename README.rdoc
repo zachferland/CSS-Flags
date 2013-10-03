@@ -1,28 +1,30 @@
-== README
+== CSS FLAGS
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A collection of flags created in only CSS and HTML from various countries around the world. Contribute to the collection here by creating a flag from any country or improving one. New flags will be continually added. These flags are not guranteed to be any bit useful and unfortunately only tested on the latest version of Chrome.
 
-Things you may want to cover:
+== Use the Flags
 
-* Ruby version
+The flags are currently organized in rails project, I am open to other ways to maybe organize them and make the code for each easier to copy.
 
-* System dependencies
+You can find the SASS/CSS for each flag inside "app/assets/css/flags". Each country has a seperate file specified by the country's name.
 
-* Configuration
+The HTML is in seperate templates in "app/views/flags", also specified by the name of the country.
 
-* Database creation
+== Contribute Flags
 
-* Database initialization
+You can add the flag of any country to this project.
 
-* How to run the test suite
+Make the flag for you own country or find some to build here - http://www.flags.net/fullindex.htm
 
-* Services (job queues, cache servers, search engines, etc.)
+When creating a flag be sure to search for the correct dimensions and hex colors. Attempt to make an as accurate representation as possible. 
 
-* Deployment instructions
+To add a flag to the project, add the SASS/CSS for the flag in a seperate file, name using the name of the country in "app/assets/css/flags"
 
-* ...
+Format SASS/CSS by wrapping your flag in a class specified by the name of the country. Add a comment with a source for flag dimensions and colors.
 
+Add your HTML for a flag by creating a seperate template/file in "app/views/flags", named using the name of the country. Format it as such.
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+FORMAT HERE
+
+When possible try to create flags that can be easily resized. This is mostly for fun, when you have nothing else to do but make some css flags. Happy flag making!
+
