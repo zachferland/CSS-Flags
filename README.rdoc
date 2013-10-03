@@ -25,6 +25,7 @@ To add a flag to the project, add the SASS/CSS for the flag in a seperate file i
 Format SASS/CSS by wrapping your flag in a class specified by the name of the country. Add a comment with a source for flag dimensions and colors. For example.
 
 ```
+
 //Italian Flag
 .italy {
   $constant: 250px;
@@ -54,7 +55,8 @@ Format SASS/CSS by wrapping your flag in a class specified by the name of the co
   //Color and Dimensions
   //http://en.wikipedia.org/wiki/Italian_flag
 }
-```
+
+```css
 
 Add your HTML for a flag by creating a seperate partial/file in "app/views/flags", name the new file using the name of the country. Format it as such for example, include country name, and your twitter handle if you want.
 
