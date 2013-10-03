@@ -24,7 +24,7 @@ To add a flag to the project, add the SASS/CSS for the flag in a seperate file i
 
 Format SASS/CSS by wrapping your flag in a class specified by the name of the country. Add a comment with a source for flag dimensions and colors. For example.
 
-`````css
+`````
 //Italian Flag
 .italy {
   $constant: 250px;
