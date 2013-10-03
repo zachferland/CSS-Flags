@@ -2,29 +2,33 @@
 
 A collection of flags created in only CSS and HTML from various countries around the world. Contribute to the collection here by creating a flag from any country or improving one. New flags will be continually added. These flags are not guranteed to be any bit useful and unfortunately only tested on the latest version of Chrome.
 
+There are currently 10 flags.
+
 == Use the Flags
 
-The flags are currently organized in rails project, I am open to other ways to maybe organize them and make the code for each easier to copy.
+The flags are currently organized in a Rails project, I am open to suggestions of much better ways maybe organize them and make the code for each flag easier to copy.
 
 You can find the SASS/CSS for each flag inside "app/assets/css/flags". Each country has a seperate file specified by the country's name.
 
-The HTML is in seperate templates in "app/views/flags", also specified by the name of the country.
+The HTML is in seperate partials/files in "app/views/flags", also specified by the name of the country.
 
 == Contribute Flags
 
-You can add the flag of any country to this project.
+You can add the flag of any country to this project. It is actually suggested.
 
 Make the flag for you own country or find some to build here - http://www.flags.net/fullindex.htm
 
 When creating a flag be sure to search for the correct dimensions and hex colors. Attempt to make an as accurate representation as possible. 
 
-To add a flag to the project, add the SASS/CSS for the flag in a seperate file, name using the name of the country in "app/assets/css/flags"
+To add a flag to the project, add the SASS/CSS for the flag in a seperate file in in "app/assets/css/flags", name the new file using the name of the country.
 
 Format SASS/CSS by wrapping your flag in a class specified by the name of the country. Add a comment with a source for flag dimensions and colors.
 
-Add your HTML for a flag by creating a seperate template/file in "app/views/flags", named using the name of the country. Format it as such.
+Add your HTML for a flag by creating a seperate partial/file in "app/views/flags", name the new file using the name of the country. Format it as such.
 
 FORMAT HERE
 
-When possible try to create flags that can be easily resized. This is mostly for fun, when you have nothing else to do but make some css flags. Happy flag making!
+When possible, create flags that can be easily resized. 
+
+This is mostly for fun, when you have nothing else to do but make some CSS flags. Happy flag making!
 
