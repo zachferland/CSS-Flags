@@ -22,7 +22,37 @@ When creating a flag be sure to search for the correct dimensions and hex colors
 
 To add a flag to the project, add the SASS/CSS for the flag in a seperate file in in "app/assets/css/flags", name the new file using the name of the country.
 
-Format SASS/CSS by wrapping your flag in a class specified by the name of the country. Add a comment with a source for flag dimensions and colors.
+Format SASS/CSS by wrapping your flag in a class specified by the name of the country. Add a comment with a source for flag dimensions and colors. For example.
+
+//Italian Flag
+.italy {
+  $constant: 250px;
+  $height: 2;
+  $width: 3;
+
+  height: $height * $constant;
+  width: $width * $constant;
+  border: 1px solid #ccc;
+
+  .column {
+    width: 33.333%;
+    height: 100%;
+    float: left;
+  }
+
+  .green {
+    background-color: #009246;
+  }
+  .white {
+    background-color: #F1F2F1;
+  }
+  .red {
+    background-color: #CE2B37;
+  }
+  
+  //Color and Dimensions
+  //http://en.wikipedia.org/wiki/Italian_flag
+}
 
 Add your HTML for a flag by creating a seperate partial/file in "app/views/flags", name the new file using the name of the country. Format it as such for example, include country name, and your twitter handle if you want.
 
@@ -37,8 +67,6 @@ Add your HTML for a flag by creating a seperate partial/file in "app/views/flags
     <div class="column white"></div>
     <div class="column red"></div>
   </div>
-
-FORMAT HERE
 
 When possible, create flags that can be easily resized. 
 
