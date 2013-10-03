@@ -26,7 +26,7 @@ Format SASS/CSS by wrapping your flag in a class specified by the name of the co
 
 Add your HTML for a flag by creating a seperate partial/file in "app/views/flags", name the new file using the name of the country. Format it as such for example, include country name, and your twitter handle if you want.
 
-```html
+```HTML
   <!-- Italy Flag -->
   <div class="text-box">
     <h2>Italy</h2>
