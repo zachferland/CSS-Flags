@@ -25573,3 +25573,49 @@ Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
 Processing by HomeController#index as HTML
   Rendered home/index.html.erb within layouts/application (2.0ms)
 Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 143ms (Views: 142.1ms | ActiveRecord: 0.0ms)
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (40.8ms)
+Completed 200 OK in 385ms (Views: 384.4ms | ActiveRecord: 0.0ms)
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 174ms (Views: 173.2ms | ActiveRecord: 0.0ms)
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 248ms (Views: 118.6ms | ActiveRecord: 0.0ms)
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (211.4ms)
+Completed 500 Internal Server Error in 348ms
+  Rendered /Users/zachferland/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_trace.erb (86.7ms)
+  Rendered /Users/zachferland/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.6ms)
+  Rendered /Users/zachferland/.rvm/gems/ruby-2.0.0-p247/gems/actionpack-4.0.0/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (200.0ms)
+Processing by HomeController#index as HTML
+  Rendered flags/_united_states.html.erb (16.5ms)
+  Rendered home/index.html.erb within layouts/application (50.6ms)
+Completed 200 OK in 274ms (Views: 139.9ms | ActiveRecord: 0.0ms)
+Processing by HomeController#index as HTML
+  Rendered flags/_united_states.html.erb (231.1ms)
+  Rendered flags/_italy.html.erb (140.2ms)
+  Rendered flags/_indonesia.html.erb (75.3ms)
+  Rendered flags/_france.html.erb (123.8ms)
+  Rendered flags/_germany.html.erb (115.8ms)
+  Rendered flags/_curacao.html.erb (76.9ms)
+  Rendered flags/_taiwan.html.erb (118.0ms)
+  Rendered flags/_monaco.html.erb (125.3ms)
+  Rendered flags/_qatar.html.erb (47.0ms)
+  Rendered home/index.html.erb within layouts/application (3471.9ms)
+Completed 200 OK in 9099ms (Views: 6991.7ms | ActiveRecord: 0.0ms)
+Processing by HomeController#index as HTML
+  Rendered flags/_united_states.html.erb (52.8ms)
+  Rendered flags/_italy.html.erb (37.9ms)
+  Rendered flags/_indonesia.html.erb (37.0ms)
+  Rendered flags/_france.html.erb (30.8ms)
+  Rendered flags/_germany.html.erb (6.4ms)
+  Rendered flags/_curacao.html.erb (48.6ms)
+  Rendered flags/_taiwan.html.erb (0.1ms)
+  Rendered flags/_monaco.html.erb (53.5ms)
+  Rendered flags/_qatar.html.erb (31.0ms)
+  Rendered home/index.html.erb within layouts/application (977.3ms)
+Completed 200 OK in 24251ms (Views: 24193.5ms | ActiveRecord: 0.0ms)

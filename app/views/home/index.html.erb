@@ -10,232 +10,30 @@
   <h1>CSS Flags</h1>
   <div class="button"><%= link_to "Use Flags or Contribute on Github", "https://github.com/zachferland/CSS-Flags" %></div>
   <div class="line"></div>
-  <p>A collection of flags created in only CSS and HTML from various countries around the world. Contribute to the collection <%= link_to "here", "https://github.com/zachferland/CSS-Flags" %> by creating <%= link_to "a flag from any country", "http://www.flags.net/fullindex.htm" %> or improving one. New flags will be continually added and old ones improved. These flags are not guranteed to be any bit useful and unfortunately as of now, only tested on the latest version of Chrome. Enjoy anyways!</p>
+  <p>A collection of flags created in only CSS and HTML from various countries around the world. Contribute to the collection <%= link_to "here", "https://github.com/zachferland/CSS-Flags" %> by creating <%= link_to "a flag from any country", "http://www.flags.net/fullindex.htm" %> or improving one. New flags will be continually added and old ones improved. These flags are not guranteed to be any bit useful and unfortunately as of now, only tested on the latest version of Chrome. Enjoy!</p>
 </div>
 </div>
 
 <div class="small-wrapper">
 
-  <div class="text-box">
-    <h2>United States</h2>
-    <h4>by <%= link_to "@zachferland", "https://twitter.com/zachferland" %></h4>
-  </div>
-  <!-- <p>by @zachferland</p> -->
-  <!-- United States Flag -->
-  <div class="united-states">
-    <div class="square">
-      <div class="star-space"></div>
-      <div class="star-row">
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-      </div>
-      <div class="star-row-five">
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-      </div>
-      <div class="star-row">
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-      </div>
-      <div class="star-row-five">
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-      </div>
-      <div class="star-row">
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-      </div>
-      <div class="star-row-five">
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-      </div>
-      <div class="star-row">
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-      </div>
-      <div class="star-row-five">
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-      </div>
-      <div class="star-row">
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-        <div id="star"></div>
-      </div>
-    </div>
-    <div class="row red"></div>
-    <div class="row white"></div>
-    <div class="row red"></div>
-    <div class="row white"></div>
-    <div class="row red"></div>
-    <div class="row white"></div>
-    <div class="row red"></div>
-    <div class="row white"></div>
-    <div class="row red"></div>
-    <div class="row white"></div>
-    <div class="row red"></div>
-    <div class="row white"></div>
-    <div class="row red"></div>
-  </div>
-  <!-- End -->
+  <%= render "flags/united_states" %>
 
+  <%= render "flags/italy" %>
 
-  <div class="text-box">
-    <h2>Italy</h2>
-    <h4>by <%= link_to "@zachferland", "https://twitter.com/zachferland" %></h4>
-  </div>
-  <!-- Italy Flag -->
-  <div class="italy">
-    <div class="column green"></div>
-    <div class="column white"></div>
-    <div class="column red"></div>
-  </div>
-  <!-- End -->
+  <%= render "flags/indonesia" %>
 
+  <%= render "flags/france" %>
 
-  <div class="text-box">
-    <h2>Indonesia</h2>
-    <h4>by <%= link_to "@zachferland", "https://twitter.com/zachferland" %></h4>
-  </div>
-  <!-- Indonesia Flag -->
-  <div class="indonesia">
-    <div class="row red"></div>
-    <div class="row white"></div>
-  </div>
-  <!-- End -->
+  <%= render "flags/germany" %>
 
+  <%= render "flags/curacao" %>
 
-  <div class="text-box">
-    <h2>France</h2>
-    <h4>by <%= link_to "@zachferland", "https://twitter.com/zachferland" %></h4>
-  </div>
-  <!-- France Flag -->
-  <div class="france">
-    <div class="column blue"></div>
-    <div class="column white"></div>
-    <div class="column red"></div>
-  </div>
-  <!-- End -->
+  <%= render "flags/taiwan" %>
 
+  <%= render "flags/monaco" %>
 
-  <div class="text-box">
-    <h2>Germany</h2>
-    <h4>by <%= link_to "@zachferland", "https://twitter.com/zachferland" %></h4>
-  </div>
-  <!-- Germany Flag -->
-  <div class="germany">
-    <div class="row black"></div>
-    <div class="row red"></div>
-    <div class="row yellow"></div>
-  </div>
-  <!-- End -->
-
-  <div class="text-box">
-    <h2>Curaçao</h2>
-    <h4>by <%= link_to "@zachferland", "https://twitter.com/zachferland" %></h4>
-  </div>
-  <!-- Curacao Flag -->
-  <div class="curacao">
-    <div class="small">
-      <div id="star"></div>
-    </div>
-    <div class="large">
-      <div id="star"></div>
-    </div>
-    <div class="row yellow"></div>
-  </div>
-  <!-- End -->
-
-  <div class="text-box">
-    <h2>Taiwan</h2>
-    <h4>by <%= link_to "@zachferland", "https://twitter.com/zachferland" %></h4>
-  </div>
-  <!-- Italy Flag -->
-  <div class="taiwan">
-    <div class="square">
-      <div class="symbol">
-        <div class="circle"></div>
-        <div class="triangle-1"></div>
-        <div class="triangle-2"></div>
-        <div class="triangle-3"></div>
-        <div class="triangle-4"></div>
-        <div class="triangle-5"></div>
-        <div class="triangle-6"></div>
-        <div class="triangle-7"></div>
-        <div class="triangle-8"></div>
-        <div class="triangle-9"></div>
-        <div class="triangle-10"></div>
-        <div class="triangle-11"></div>
-        <div class="triangle-12"></div>
-      </div>
-    </div>
-  </div>
-  <!-- End -->
-
-  <div class="text-box">
-    <h2>Monaco</h2>
-    <h4>by <%= link_to "@zachferland", "https://twitter.com/zachferland" %></h4>
-  </div>
-  <!-- Monaco Flag -->
-  <div class="monaco">
-    <div class="row red"></div>
-    <div class="row white"></div>
-  </div>
-  <!-- End -->
-
-  <div class="text-box">
-    <h2>Qatar</h2>
-    <h4>by <%= link_to "@zachferland", "https://twitter.com/zachferland" %></h4>
-  </div>
-  <!-- Monaco Flag -->
-  <div class="qatar">
-    <div class="white"></div>
-    <div class="triangle-container first"><div class="triangle"></div></div>
-    <div class="triangle-container"><div class="triangle"></div></div>
-    <div class="triangle-container"><div class="triangle"></div></div>
-    <div class="triangle-container"><div class="triangle"></div></div>
-    <div class="triangle-container"><div class="triangle"></div></div>
-    <div class="triangle-container"><div class="triangle"></div></div>
-    <div class="triangle-container"><div class="triangle"></div></div>
-    <div class="triangle-container"><div class="triangle"></div></div>
-    <div class="triangle-container"><div class="triangle"></div></div>
-  </div>
-  <!-- End -->
-
-
-
-
+  <%= render "flags/qatar" %>
+    
 </div>
 
 

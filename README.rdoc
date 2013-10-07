@@ -14,7 +14,7 @@ The HTML is in seperate partials/files in "app/views/flags", also specified by t
 
 == Contribute Flags
 
-You can add the flag of any country to this project. It is actually suggested.
+You can add the flag of any country to this project. You are suggested to do so.
 
 Make the flag for you own country or find some to build here - http://www.flags.net/fullindex.htm
 
@@ -22,7 +22,7 @@ When creating a flag be sure to search for the correct dimensions and hex colors
 
 To add a flag to the project, add the SASS/CSS for the flag in a seperate file in in "app/assets/css/flags", name the new file using the name of the country.
 
-Format SASS/CSS by wrapping your flag in a class specified by the name of the country. Add a comment with a source for flag dimensions and colors. For example.
+Format SASS/CSS by wrapping your flag in a class specified by the name of the country. Add a comment with a source for flag dimensions. For example.
 
 
 
